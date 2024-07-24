@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1: El Diodo de Unión PN</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .section-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidad 1: El Diodo de Unión PN</h1>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('introduccion')">1.1 Introducción al curso</a></li>
+            <li><a href="#" onclick="showSection('diodo-ideal')">1.2 Diodo ideal</a></li>
+            <li><a href="#" onclick="showSection('diodo-elemento-circuitos')">1.3 El diodo como elemento de circuitos</a></li>
+            <li><a href="#" onclick="showSection('aplicaciones-diodo')">1.4 Aplicaciones del diodo</a></li>
+            <li><a href="#" onclick="showSection('rectificador')">1.5 El diodo como dispositivo rectificador</a></li>
+            <li><a href="#" onclick="showSection('especificaciones')">1.6 Especificaciones Técnicas de los Diodos Rectificadores</a></li>
+            <li><a href="#" onclick="showSection('zener')">1.7 El diodo Zener</a></li>
+            <li><a href="#" onclick="showSection('fuente-con-CI')">1.8 Fuente de alimentación regulada con CI</a></li>
+            <li><a href="#" onclick="showSection('led')">1.9 Diodo emisor de luz</a></li>
+            <!-- Agrega otros enlaces aquí -->
+        </ul>
+    </nav>
+
+    <div id="introduccion" class="section-content">
+        <h2>1.1 Introducción al curso</h2>
+        <p>Contenido sobre la introducción al curso.</p>
+    </div>
+
+    <div id="diodo-ideal" class="section-content">
+        <h2>1.2 Diodo ideal: principio de funcionamiento</h2>
+        <p>Contenido sobre el diodo ideal.</p>
+        
+        <!-- Texto adicional -->
+        <p>Un diodo es un dispositivo semiconductor de dos terminales: ánodo y cátodo, que permite el paso de la corriente en una única dirección, de ánodo a cátodo.</p>
+        
+        <!-- Imagen del diodo -->
+        <img src="images/diodo1.jpg" alt="Dibujo del diodo" style="width: 200; height: 100;">
+    </div>
+
+    <div id="diodo-elemento-circuitos" class="section-content">
+        <h2>1.3 El diodo como elemento de circuitos</h2>
+        <p>Contenido sobre el diodo ideal.</p>
+        
+        <!-- Texto adicional -->
+        <p>Un diodo es un dispositivo semiconductor de dos terminales: ánodo y cátodo, que permite el paso de la corriente en una única dirección, de ánodo a cátodo.</p>
+        
+        <!-- Imagen del diodo -->
+        <img src="images/diodo1.jpg" alt="Dibujo del diodo" style="width: 200; height: 100;">
+    </div>
+
+    <div id="aplicaciones-diodo" class="section-content">
+        <h2>1.4 Aplicaciones del diodo</h2>
+        <p>Contenido sobre el diodo ideal.</p>
+        
+        <!-- Texto adicional -->
+        <p>Un diodo es un dispositivo semiconductor de dos terminales: ánodo y cátodo, que permite el paso de la corriente en una única dirección, de ánodo a cátodo.</p>
+        
+        <!-- Imagen del diodo -->
+        <img src="images/recortador de onda.jpg" alt="Dibujo del diodo" style="max-width: 40%; height: auto;">
+    </div>
+
+    <div id="rectificador" class="section-content">
+        <h2>1.5 El diodo como dispositivo rectificador</h2>
+        <p>Contenido sobre el diodo ideal.</p>
+        
+        <!-- Texto adicional -->
+        <p>Un diodo es un dispositivo semiconductor de dos terminales: ánodo y cátodo, que permite el paso de la corriente en una única dirección, de ánodo a cátodo.</p>
+        
+        <!-- Imagen del diodo -->
+        <img src="images/rectificador.jpg" alt="Dibujo del diodo" style="width: 200; height: 100;">
+    </div>
+
+    <div id="especificaciones" class="section-content">
+        <h2>1.6 Especificaciones técnicas de los diodos</h2>
+        <p>Contenido sobre el diodo ideal.</p>
+        
+        <!-- Texto adicional -->
+        <p>Un diodo es un dispositivo semiconductor de dos terminales: ánodo y cátodo, que permite el paso de la corriente en una única dirección, de ánodo a cátodo.</p>
+        
+        <!-- Imagen del diodo -->
+        <img src="images/diodo1.jpg" alt="Dibujo del diodo" style="width: 200; height: 100;">
+    </div>
+
+    <div id="zener" class="section-content">
+        <h2>1.7 El Diodo zener</h2>
+        <p>Contenido sobre el diodo ideal.</p>
+        
+        <!-- Texto adicional -->
+        <p>Un diodo es un dispositivo semiconductor de dos terminales: ánodo y cátodo, que permite el paso de la corriente en una única dirección, de ánodo a cátodo.</p>
+        
+        <!-- Imagen del diodo -->
+        <img src="images/zener.png" alt="Dibujo del diodo" style="max-width: 20%; height: auto;">
+    </div>
+
+    <div id="fuente-con-CI" class="section-content">
+        <h2>1.8 Fuente de alimentación regulada con circuito integrado</h2>
+        <p>Contenido sobre el diodo ideal.</p>
+        
+        <!-- Texto adicional -->
+        <p>Un diodo es un dispositivo semiconductor de dos terminales: ánodo y cátodo, que permite el paso de la corriente en una única dirección, de ánodo a cátodo.</p>
+        
+        <!-- Imagen del diodo -->
+        <img src="images/fuente con CI.jpg" alt="Dibujo del diodo" style="width: 200; height: 100;">
+
+ <!-- Formulario para calcular el voltaje máximo -->
+ <div class="input-box">
+    <label for="vi">Vi (RMS):</label>
+    <input type="number" id="vi" placeholder="Ingrese el valor de Vi (RMS)" />
+</div>
+
+<div class="input-box">
+    <label for="f">f (Hz):</label>
+    <input type="number" id="f" placeholder="Ingrese el valor de f (Hz)" />
+</div>
+ 
+ 
+ <div class="input-box">
+    <label for="n">n:</label>
+    <input type="number" id="n" placeholder="Ingrese el valor de n" />
+</div>
+
+<div class="input-box">
+    <label for="C">C:</label>
+    <input type="number" id="C" placeholder="Ingrese el valor de C (uF)" />
+</div>
+
+
+<div class="input-box">
+    <label for="Vout">Vout:</label>
+    <input type="number" id="Vout" placeholder="Ingrese el valor de Vout (V)" />
+</div>
+
+<div class="input-box">
+    <label for="RL">RL:</label>
+    <input type="number" id="RL" placeholder="Ingrese el valor de RL (Ω)" />
+</div>
+
+<button onclick="calcular()">Calcular</button>
+
+<div class="output-box">
+    <p id="resultado1">Vmax: --</p>
+</div>
+
+<div class="output-box">
+    <p id="resultado2">Vmin: --</p>
+</div>
+
+</div>
+
+
+    
+
+    <div id="led" class="section-content">
+        <h2>1.9 Diodo emisor de luz</h2>
+        <p>Contenido sobre el diodo LED.</p>
+        
+       
+        <!-- Texto adicional -->
+        <p>El principio de funcionamiento de un LED (diodo emisor de luz) se basa en la electroluminiscencia, que es la emisión de luz cuando una corriente eléctrica pasa a través de un material:
+
+            1. Material Semiconductor: Un LED está construido de un semiconductor que tiene una unión p-n. Esta unión se forma al unir dos tipos de materiales semiconductores: uno con exceso de electrones (tipo n) y otro con déficit de electrones (tipo p).
+            
+            2. Aplicación de Voltaje: Cuando se aplica un voltaje adecuado al LED, los electrones del material tipo n y los "huecos" (espacios donde faltan electrones) del material tipo p se encuentran en la unión p-n.
+            
+            3. Recombinaión de Carga: Los electrones caen en los huecos, y al recombinarse, liberan energía en forma de fotones, que es la luz visible. La energía liberada depende del tipo de material semiconductor, lo que determina el color del LED.
+            
+            4. Emisión de Luz: La luz emitida por el LED es direccional, lo que significa que se emite en una sola dirección, lo que lo hace más eficiente que las bombillas incandescentes, que emiten luz en todas direcciones.
+            
+            Por tanto, el LED convierte la energía eléctrica en luz mediante la recombinación de electrones y huecos en un material semiconductor.</p>
+        
+        <!-- Imagen del diodo -->
+        <img src="images/led1.jpg" alt="Dibujo del diodo" style="width: 200; height: 100;">
+        <img src="images/led2.gif" alt="GIF del diodo" class="gif-dibujo"; style="max-width: 40%; height: auto;">
+
+        <!-- Sección con el video de YouTube -->
+   <div class="video-section">
+    <h2>Video Tutorial</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5COMvmPPaKg?si=84jlcESoQUPluLn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+    </div>
+
+   
+
+    <script>
+
+
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section-content');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            var sectionToShow = document.getElementById(sectionId);
+            if (sectionToShow) {
+                sectionToShow.style.display = 'block';
+            }
+        }
+
+        function calcular() {
+            
+            var vi = document.getElementById('vi').value;
+            var f = document.getElementById('f').value;
+            var n = document.getElementById('n').value;
+            var C = document.getElementById('C').value;
+            var Vout = document.getElementById('Vout').value;
+            var RL = document.getElementById('RL').value;
+            
+            // Verifica si los valores ingresados son válidos
+            if (n && vi && C && f && Vout) {
+                var viRms = parseFloat(vi);
+                var vMax = viRms * 1.4142/n - 1.4;
+                var IDC = Vout/RL;
+                var Vrizado = IDC*1000000/(2*f*C);
+                var vMin = vMax-Vrizado;
+                
+                document.getElementById('resultado1').innerText = "Vmax: " + vMax.toFixed(2) + " V";
+                document.getElementById('resultado2').innerText = "Vmin: " + vMin.toFixed(2) + " V";
+            } else {
+                document.getElementById('resultado1').innerText = "Por favor, ingrese valores válidos para n y Vi.";
+            }
+        }
+
+        // Mostrar la primera sección por defecto
+        showSection('introduccion');
+        
+    </script>
+</body>
+</html>
+
+
+

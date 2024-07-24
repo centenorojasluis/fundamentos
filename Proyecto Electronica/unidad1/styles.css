@@ -1,0 +1,22 @@
+.input-box {
+    margin-bottom: 10px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.output-box {
+    margin-top: 20px;
+}
+
+.output-box p {
+    font-weight: bold;
+}

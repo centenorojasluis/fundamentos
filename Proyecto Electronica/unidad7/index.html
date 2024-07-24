@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unidad 7: Amplificadores Operacionales</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .section-content {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Unidad 7: Amplificadores Operacionales</h1>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showSection('Introduccion')">7.1 Introducción a los amplificadores operacionales</a></li>
+      <li><a href="#" onclick="showSection('Opamp-modo-lineal')">7.2 Configuraciones circuitales típicas con OPAMP en modo lineal</a></li>
+      <li><a href="#" onclick="showSection('Salida-Push-Pull')">7.3 Configuración interna: salida push-pulldel amplificador operacional, OPAMP con salida riel a riel</a></li>
+      <li><a href="#" onclick="showSection('Opamp-modo-no-lineal')">7.4 Utilización de OPAMP en modo no lineal</a></li>
+      <li><a href="#" onclick="showSection('Open-Collector')">7.5 Opamp con salida colector abierto</a></li>
+      <li><a href="#" onclick="showSection('Especificaciones')">7.6 Especificaciones de los opamps</a></li>
+      <li><a href="#" onclick="showSection('Filtros')">7.7 Filtros Analógicos</a></li>
+
+      <!-- Agrega otros enlaces aquí -->
+    </ul>
+  </nav>
+
+  <div id="Introduccion" class="section-content">
+    <h2>7.1 Introducción a los amplificadores operacionales</h2>
+    <p>Contenido sobre la introducción al curso.</p>
+  </div>
+
+
+  <div id="Opamp-modo-lineal" class="section-content">
+    <h2>7.2 Configuraciones circuitales típicas con
+      OPAMP en modo lineal</h2>
+    <p>Contenido sobre la introducción al curso.</p>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('Amplificador-No-Inversor')">7.2.1 Amplificador No Inversor</a></li>
+        <li><a href="#" onclick="showSection('Buffer')">7.2.2 Buffer o seguidor de voltaje</a></li>
+        <li><a href="#" onclick="showSection('Amplificador-Inversor')">7.2.3 Amplificador Inversor</a></li>
+        <li><a href="#" onclick="showSection('Sumador-Inversor')">7.2.4 Sumador Inversor</a></li>
+        <li><a href="#" onclick="showSection('Solucion-ecuaciones')">7.2.5 Solucion de ecuaciones lineales</a></li>
+        <li><a href="#" onclick="showSection('Amplificador-Restador')">7.2.6 Amplificador restador</a></li>
+        <li><a href="#" onclick="showSection('Amplificador-Instrumentacion')">7.2.7 Amplificador de Instrumentación</a></li>
+        <li><a href="#" onclick="showSection('Derivador')">7.2.8 Derivador</a></li>
+        <li><a href="#" onclick="showSection('Integrador')">7.2.9 Integrador</a></li>
+        <li><a href="#" onclick="showSection('Rectificador')">7.2.10 Amplificador Rectificador</a></li>
+        
+      </ul>
+    </nav>
+
+  </div>
+
+  <div id="Amplificador-No-Inversor" class="section-content">
+    <h3>7.2.1 Amplificador No Inversor</h3>
+    <p>Contenido sobre la introducción al curso****************.</p>
+  </div>
+
+  <div id="Amplificador-Instrumentacion" class="section-content">
+    <h3>7.2.7 Amplificador de >Instrumentacion</h3>
+    <p>Contenido sobre la introducción al curso</p>
+
+    <div class="input-box">
+      <label for="VCC">VCC (V):</label>
+      <input type="number" id="VCC" placeholder="Ingrese el valor de VCC (V)" />
+    </div>
+    
+    <div class="input-box">
+      <label for="R1">R1 (kΩ):</label>
+      <input type="number" id="R1" placeholder="Ingrese el valor de R1 (kΩ)" />
+    </div>
+
+    <div class="input-box">
+      <label for="R2">R2 (kΩ):</label>
+      <input type="number" id="R2" placeholder="Ingrese el valor de R2 (kΩ)" />
+    </div>
+
+    <div class="input-box">
+      <label for="RS">RS (kΩ):</label>
+      <input type="number" id="RS" placeholder="Ingrese el valor de RS (kΩ)" />
+    </div>
+
+    <div class="input-box">
+      <label for="RG">RG (kΩ):</label>
+      <input type="number" id="RG" placeholder="Ingrese el valor de RG (kΩ)" />
+    </div>
+
+    
+    <button onclick="calcularINA()">Calcular</button>
+
+    <div class="output-box">
+      <p id="resultado1">Vin+: --</p>
+    </div>
+
+    <div class="output-box">
+      <p id="resultado2">Vin-: --</p>
+    </div>
+
+
+    <div class="output-box">
+      <p id="resultado3">Ventrada: --</p>
+    </div>
+
+    <div class="output-box">
+      <p id="resultado4">Vout: --</p>
+    </div>
+
+  </div>
+
+
+
+  <div id="Salida-Push-Pull" class="section-content">
+    <h2>7.3 Configuración interna: salida push-pull
+      del amplificador operacional, OPAMP con salida riel a riel</h2>
+    <p>Contenido sobre la introducción al curso.</p>
+  </div>
+
+  <div id="Opamp-modo-no-lineal" class="section-content">
+    <h2>7.4 Utilización de OPAMP en modo no lineal</h2>
+    <p>Contenido sobre la introducción al curso.</p>
+  </div>
+
+
+  <div id="Open-Collector" class="section-content">
+    <h2>7.5 Opamp con salida colector abierto</h2>
+    <p>Contenido sobre la introducción al curso.</p>
+  </div>
+
+
+
+  <div id="Especificaciones" class="section-content">
+    <h2>7.6 Especificaciones de los Opamps</h2>
+    <p>Contenido sobre la introducción al curso.</p>
+  </div>
+
+
+  <div id="Filtros" class="section-content">
+    <h2>7.7 Filtros</h2>
+    <p>Contenido sobre la introducción al curso.</p>
+  </div>
+
+
+
+
+  <div id="respuesta-en-baja-frecuencia" class="section-content">
+    <h2>6.2 Respuesta en baja frecuencia de un amplificador con MOSFET de enriquecimiento en configuración surtidor
+      común</h2>
+    <p>Contenido sobre el diodo ideal.</p>
+
+    <!-- Texto adicional -->
+    <p>Un diodo es un dispositivo semiconductor de dos terminales: ánodo y cátodo, que permite el paso de la corriente
+      en una única dirección, de ánodo a cátodo.</p>
+
+    <!-- Imagen del diodo -->
+    <img src="images/diodo1.jpg" alt="Dibujo del diodo" style="width: 200; height: 100;">
+
+
+
+    <!-- Formulario para calcular el voltaje máximo -->
+    <div class="input-box">
+      <label for="VDD">VDD (V):</label>
+      <input type="number" id="VDD" placeholder="Ingrese el valor de VDD (V)" />
+    </div>
+
+
+    <div class="input-box">
+      <label for="R1">R1 (kΩ):</label>
+      <input type="number" id="R1" placeholder="Ingrese el valor de R1 (kΩ)" />
+    </div>
+
+    <div class="input-box">
+      <label for="R2">R2 (kΩ):</label>
+      <input type="number" id="R2" placeholder="Ingrese el valor de R2 (kΩ)" />
+    </div>
+
+    <div class="input-box">
+      <label for="RD">RD (kΩ):</label>
+      <input type="number" id="RD" placeholder="Ingrese el valor de RD (kΩ)" />
+    </div>
+
+    <div class="input-box">
+      <label for="VT">VT (V):</label>
+      <input type="number" id="VT" placeholder="Ingrese el valor de VT (V)" />
+    </div>
+
+
+    <div class="input-box">
+      <label for="k">k:</label>
+      <input type="number" id="k" placeholder="Ingrese el valor de k (mA/(V*V))" />
+    </div>
+
+
+
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div class="output-box">
+      <p id="resultado1">VGS: --</p>
+    </div>
+
+    <div class="output-box">
+      <p id="resultado2">ID: --</p>
+    </div>
+
+
+    <div class="output-box">
+      <p id="resultado3">VDS: --</p>
+    </div>
+
+    <div class="output-box">
+      <p id="resultado4">gm: --</p>
+    </div>
+
+    <div class="output-box">
+      <p id="resultado5">rd: --</p>
+    </div>
+
+  </div>
+
+
+
+
+
+  <div id="Respuesta-en-alta-frecuencia" class="section-content">
+    <h2>6.3 Respuesta en alta frecuencia de un amplificador con MOSFET de enriquecimiento en configuración surtidor
+      común</h2>
+    <p>Contenido sobre el diodo ideal.</p>
+
+    <!-- Texto adicional -->
+    <p>Un diodo es un dispositivo semiconductor de dos terminales: ánodo y cátodo, que permite el paso de la corriente
+      en una única dirección, de ánodo a cátodo.</p>
+
+    <!-- Imagen del diodo -->
+    <img src="images/diodo1.jpg" alt="Dibujo del diodo" style="width: 200; height: 100;">
+  </div>
+
+
+
+
+  <script>
+
+
+    function showSection(sectionId) {
+      var sections = document.querySelectorAll('.section-content');
+      sections.forEach(function (section) {
+        section.style.display = 'none';
+      });
+
+      var sectionToShow = document.getElementById(sectionId);
+      if (sectionToShow) {
+        sectionToShow.style.display = 'block';
+      }
+    }
+
+    function calcularINA() {
+      var VCC = document.getElementById('VCC').value;
+      var R1 = document.getElementById('R1').value;
+      var R2 = document.getElementById('R2').value;
+      var RS = document.getElementById('RS').value;
+      var RG = document.getElementById('RG').value;
+      
+      
+      // Verifica si los valores ingresados son válidos
+      if (VCC && R1 && R2 && RS && RG) {
+        // Convierte las entradas a números
+        VCC = parseFloat(VCC);
+        R1 = parseFloat(R1);
+        R2 = parseFloat(R2);
+        RS = parseFloat(RS);
+        RG = parseFloat(RG);
+      
+
+        // Calcula VGS, ID y VDS
+        var Vmas = VCC * RS / (R1 + RS);
+        var Vmenos = VCC * R2 / (R1 + R2);
+        var Ventrada=Vmas-Vmenos;
+        var G = 1+50/RG;
+        var Vout = Ventrada*G;
+        
+
+        // Muestra los resultados
+        document.getElementById('resultado1').innerText = "Vmas: " + Vmas.toFixed(2) + " V";
+        document.getElementById('resultado2').innerText = "Vmenos: " + Vmenos.toFixed(2) + " V";
+        document.getElementById('resultado3').innerText = "ventrada: " + Ventrada.toFixed(2) + " V";
+        document.getElementById('resultado4').innerText = "vout: " + Vout.toFixed(2) + " V";
+
+      } else {
+        document.getElementById('resultado1').innerText = "Por favor, ingrese valores válidos para todos los campos.";
+      }
+    }
+
+
+
+    // Mostrar la primera sección por defecto
+    showSection('introduccion');
+
+  </script>
+</body>
+
+</html>
